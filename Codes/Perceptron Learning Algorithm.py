@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
 
 # ## Perceptron as a linear classifier Unit
 
@@ -66,7 +64,7 @@ def sigmoid(z):
 sigmoid(5)
 
 
-# ## Implement Perceptron Learning Algorithm
+### Implement Perceptron Learning Algorithm
 
 # In[9]:
 
@@ -134,9 +132,8 @@ weights = train(X,Y,learning_rate=0.6, maxEpochs = 1000)
 print(weights)
 
 
-# ## Perceptron Implementation Part 2
+### Perceptron Implementation Part 2
 
-# In[12]:
 
 
 def getPredictions(X_Test, weights, labels=True):
@@ -183,45 +180,6 @@ plt.show()
 Y_ = getPredictions(X,weights,labels = True)
 training_acc = np.sum(Y_==Y)/Y.shape[0]
 print(training_acc)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
